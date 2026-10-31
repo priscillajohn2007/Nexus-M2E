@@ -1,0 +1,178 @@
+{
+  "meetings": [],
+  "decisions": [],
+  "tasks": [],
+  "conflicts": [],
+  "constraints": [
+    {
+      "id": "const-1",
+      "title": "Data Residency Mandate",
+      "rule": "All customer data and primary relational databases must be deployed in US-East-1 region for SOC2 compliance.",
+      "category": "compliance",
+      "severity": "CRITICAL_BLOCKING",
+      "active": true,
+      "createdAt": "2026-10-15T10:00:00Z"
+    },
+    {
+      "id": "const-2",
+      "title": "Database Migration Architectural Review",
+      "rule": "Any core database schema change or engine switch requires sign-off from tech lead before production cutover.",
+      "category": "architecture",
+      "severity": "CRITICAL_BLOCKING",
+      "active": true,
+      "createdAt": "2026-10-18T14:30:00Z"
+    },
+    {
+      "id": "const-3",
+      "title": "Zero Unredacted Storage",
+      "rule": "No raw secrets, auth keys, or unredacted financial account tokens may be logged or passed to 3P services.",
+      "category": "compliance",
+      "severity": "CRITICAL_BLOCKING",
+      "active": true,
+      "createdAt": "2026-10-20T09:00:00Z"
+    }
+  ],
+  "auditLogs": [],
+  "teamMembers": [
+    {
+      "id": "user-organizer",
+      "name": "You (Meeting Organizer)",
+      "role": "Product & Engineering Lead",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+      "email": "organizer@nexus-m2e.internal",
+      "weeklyCapacityHours": 40,
+      "allocatedHours": 0
+    },
+    {
+      "id": "user-alex",
+      "name": "Alex Rivera",
+      "role": "Staff Architect & Backend Lead",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+      "email": "alex.rivera@nexus-corp.internal",
+      "weeklyCapacityHours": 35,
+      "allocatedHours": 0
+    },
+    {
+      "id": "user-priya",
+      "name": "Priya Sharma",
+      "role": "Principal DevOps Engineer",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80",
+      "email": "priya.sharma@nexus-corp.internal",
+      "weeklyCapacityHours": 40,
+      "allocatedHours": 0
+    },
+    {
+      "id": "user-marcus",
+      "name": "Marcus Vance",
+      "role": "Security & Compliance Officer",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+      "email": "marcus.vance@nexus-corp.internal",
+      "weeklyCapacityHours": 30,
+      "allocatedHours": 0
+    },
+    {
+      "id": "user-elena",
+      "name": "Elena Rostova",
+      "role": "Lead Frontend Engineer",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80",
+      "email": "elena.rostova@nexus-corp.internal",
+      "weeklyCapacityHours": 40,
+      "allocatedHours": 0
+    }
+  ],
+  "trackerConfig": {
+    "provider": "github",
+    "enabled": false,
+    "apiKey": "",
+    "targetRepositoryOrBoard": "nexus-corp/core-platform-v2",
+    "syncState": "not_configured",
+    "errorMessage": "External tracker is not configured. Configure GitHub token in Settings or items remain stored internally."
+  },
+  "auth": {
+    "profiles": [
+      {
+        "id": "usr-1793451704678-6c0de4f5",
+        "fullName": "Alex Rivera",
+        "email": "alex@test.com",
+        "createdAt": "2026-10-31T13:01:44.742Z",
+        "role": null,
+        "isVerified": false,
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+      },
+      {
+        "id": "usr-1793451757567-4085ca4e",
+        "fullName": "Jordan Cole",
+        "email": "jordan@nexus.corp",
+        "createdAt": "2026-10-31T13:02:37.650Z",
+        "role": "participant",
+        "isVerified": true,
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+      },
+      {
+        "id": "usr-1793451757740-f4666964",
+        "fullName": "Taylor Reed",
+        "email": "taylor@nexus.corp",
+        "createdAt": "2026-10-31T13:02:37.800Z",
+        "role": null,
+        "isVerified": false,
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+      }
+    ],
+    "userRoles": [
+      {
+        "userId": "usr-1793451757567-4085ca4e",
+        "role": "participant",
+        "assignedAt": "2026-10-31T13:02:37.730Z"
+      }
+    ],
+    "credentials": [
+      {
+        "userId": "usr-1793451704678-6c0de4f5",
+        "email": "alex@test.com",
+        "passwordHash": "199f08a8cbd0e0edf07202e12e3c66a0a59c669e1cb54f07b8cd64f3877451c1c6abfdf68406ef2549f4cfead0abadeba11f403d8ba65a03e511851b6cb9f28d",
+        "passwordSalt": "aa1d352eb62410e6350ff51036705f6d",
+        "isVerified": false,
+        "verificationToken": "8644e43262e407c7f9b2c98b3e38bdb739be2a3d9b685b4efbe7ed6463210903",
+        "verificationExpiresAt": "2026-11-01T13:01:44.742Z",
+        "lastVerificationSentAt": "2026-10-31T13:01:44.742Z",
+        "resetToken": null,
+        "resetExpiresAt": null,
+        "createdAt": "2026-10-31T13:01:44.742Z"
+      },
+      {
+        "userId": "usr-1793451757567-4085ca4e",
+        "email": "jordan@nexus.corp",
+        "passwordHash": "76ad1770baf070ba0f2bf1f5e83aef48970439abdc750abf11a94f8f4dc9bec1a9a91e6d9f18d3a6caa7da9c264ef71dc32dc9ae82b020d8d1c45af07e6e6ad6",
+        "passwordSalt": "4555922519848602e1344ca37ab59ea6",
+        "isVerified": true,
+        "verificationToken": null,
+        "verificationExpiresAt": null,
+        "lastVerificationSentAt": "2026-10-31T13:02:37.650Z",
+        "resetToken": null,
+        "resetExpiresAt": null,
+        "createdAt": "2026-10-31T13:02:37.650Z"
+      },
+      {
+        "userId": "usr-1793451757740-f4666964",
+        "email": "taylor@nexus.corp",
+        "passwordHash": "9294f38b561866d6448404029d2b75fdb1157d93bd9e6a7a0772723f14a49a40fee6b51f7e9992ef061be73bd7dcea6192f4ffea8c34aab1fe3e1d781fb75e4e",
+        "passwordSalt": "5097e5a0ea2054e32cc88df329e7952f",
+        "isVerified": false,
+        "verificationToken": "b1bc6f693561b1ae4c76656cec8aab2bbc8477ee284eace7913647cc2eee0c64",
+        "verificationExpiresAt": "2026-11-01T13:02:37.800Z",
+        "lastVerificationSentAt": "2026-10-31T13:02:37.800Z",
+        "resetToken": null,
+        "resetExpiresAt": null,
+        "createdAt": "2026-10-31T13:02:37.800Z"
+      }
+    ],
+    "sessions": [
+      {
+        "token": "b1821d2f006ce14ca402754980acb6b058a63d4242f087a778d7b7fa8c21845e",
+        "userId": "usr-1793451757567-4085ca4e",
+        "createdAt": "2026-10-31T13:02:37.726Z",
+        "expiresAt": "2026-11-30T13:02:37.726Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ConsensusAI - Meeting Intelligence & Decision Governance",
+  "description": "Enterprise meeting transcript intelligence, automated PII redaction, decision conflict detection, and action item dispatch.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
